@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--  
+from C++ code:
+#define BILINEAR_NO_FILT_MODEL_CODE 0 // 0x00
+#define BILINEAR_SIMPLE_FILT_MODEL_CODE 1 // 0x01
+#define BILINEAR_EXP_FILT_MODEL_CODE 2 // 0x02
+#define SHEPARD_1_5_NO_FILT_MODEL_CODE 3 // 0x03
+#define SHEPARD_1_5_SIMPLE_FILT_MODEL_CODE 4 // 0x04
+#define SHEPARD_1_5_EXP_FILT_MODEL_CODE 5 // 0x05
+#define SHEPARD_4_5_NO_FILT_MODEL_CODE 6 // 0x06
+#define SHEPARD_4_5_SIMPLE_FILT_MODEL_CODE 7 // 0x07
+#define SHEPARD_4_5_EXP_FILT_MODEL_CODE 8 // 0x08
+#define GENETIC_2_NO_FILT_MODEL_CODE 12 // 0x0C
+#define GENETIC_2_SIMPLE_FILT_MODEL_CODE 13 // 0x0D
+#define GENETIC_2_EXP_FILT_MODEL_CODE 14 // 0x0E
+ -->
+    <string-array name="model_descs">
+        <item>Int. dwuliniowa, bez filt.</item>
+        <item>Int. dwuliniowa, filt. SMA</item>
+        <item>Int. dwuliniowa, fitl. EMA</item>
+        <item>Int. Sheparda (1.5), bez filt.</item>
+        <item>Int. Sheparda (1.5), filt. SMA</item>
+        <item>Int. Sheparda (1.5), filt. EMA</item>
+        <item>Int. Sheparda (4.5), bez filt.</item>
+        <item>Int. Sheparda (4.5), filt. SMA</item>
+        <item>Int. Sheparda (4.5), filt. EMA</item>
+        <item>Genetyczny (2), bez filt.</item>
+        <item>Genetyczny (2), filt. SMA</item>
+        <item>Genetyczny (2), filt. EMA</item>
+    </string-array>
+    
+    <!-- hex values -->
+    <string-array name="model_codes">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>0c</item>
+        <item>0d</item>
+        <item>0e</item>
+    </string-array>
+</resources>

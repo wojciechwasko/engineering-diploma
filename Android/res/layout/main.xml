@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<LinearLayout
+	    android:id="@+id/upper_text_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" android:orientation="vertical">
+	    <TextView  
+    		android:id="@+id/upper_text"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="fill_parent"  
+    	    android:typeface="monospace"
+    	    android:textSize="16px"
+    	    android:text="@string/default_upper_text" />
+	</LinearLayout>
+	<FrameLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<ImageView
+			android:id="@+id/imageOverlay"
+			android:src="@drawable/seekur" android:layout_height="fill_parent" android:layout_width="fill_parent" android:scaleType="center" android:background="#fff" />
+		<VideoView
+			android:layout_width="fill_parent"
+			android:id="@+id/videoPlayer"
+			android:layout_gravity="center"
+			android:layout_height="fill_parent"
+			android:visibility="invisible"></VideoView>
+	</FrameLayout>
+</LinearLayout>

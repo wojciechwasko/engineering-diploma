@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SeekurJrRCActivity!</string>
+    <string name="app_name">SeekurJrRC</string>
+    <string name="default_upper_text">Rozpoczynam inicjalizację...</string>
+</resources>

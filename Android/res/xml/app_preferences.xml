@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+    	android:title="Ustawienia robota">
+        	<EditTextPreference
+            	android:name="videoURL"
+                android:summary="URL, z którego będzie pobierane wideo."
+                android:defaultValue="/sdcard/Vid/test_video.3gp"
+                android:title="URL video"
+                android:key="videoURL" />
+            <EditTextPreference
+            	android:name="controlURL"
+            	android:summary="URL, na którym uruchomiona jest aplikacja sterująca robotem."
+            	android:defaultValue="192.168.0.102"
+            	android:title="URL serwera"
+            	android:key="controlURL" />
+           	<EditTextPreference
+           		android:name="controlPort"
+           		android:summary="Numer portu, na którym nasłuchuje serwer."
+           		android:defaultValue="1024"
+           		android:title="Port serwera"
+           		android:key="controlPort" />
+           	<ListPreference
+           		android:name="controlCode"
+           		android:title="Model translacji"
+           		android:summary="Model translacji wskazań akcelerometru na prędkość robota."           		         
+           		android:key="controlCode"
+           		android:defaultValue="1"
+           		android:entries="@array/model_descs"
+           		android:entryValues="@array/model_codes" /> 
+        </PreferenceCategory>
+</PreferenceScreen>
